@@ -5,37 +5,68 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign Up</title>
         <link rel="stylesheet" href="css/styles.css">
+<!---------------------------Fonts--------------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
     </head>
         <body>
             <div class="background">
 
             <div class="card">
-                <img src="images/logo.png" class="logo">
+                <img src="images/logo.png" class="logo" alt="bunny logo">
 
-                <h1> Sign Up!</h1>
+                <h1 class="signup">Sign Up</h1>
 
                 <p>Begin your journey into a world of wonder.</p>
 
-                <form>
+                <form action="#" method="post">
 
                     <div class="input-group">
                         <label for="username">Username</label>
-                        <input type="text" id="username" required>
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            placeholder="Choose a username"
+                            required
+                            >
                     </div>
 
                     <div class="input-group">
                         <label for="email">Email</label>
-                        <input type="text" id="email" required>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                            >
                     </div>
 
                     <div class="input-group">
                         <label for="password">Password</label>
-                        <input type="text" id="password" required>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            required
+                            >
                     </div>
 
                     <div class="input-group">
                         <label for="confirm">Confirm Password</label>
-                        <input type="text" id="confirm" required>
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            name="confirm-password"
+                            placeholder="Confirm your password"
+                            required
+                            >
                     </div>
 
                     <button>Create Account</button>
